@@ -1,5 +1,6 @@
 import { getContext, getElement, store } from "@wordpress/interactivity";
 import Pickr from '@simonwep/pickr'
+import copy from 'copy-to-clipboard';
 
 interface EachItem {
   item: Item
@@ -137,16 +138,13 @@ const { state, actions } = store('boxShadowGenerator', {
     },
 
     copyToClipboard() {
-      if (navigator.clipboard) {
-        return navigator.clipboard.writeText(state.boxShadowCSS)
-      }
       const { ref } = getElement()
       if (ref) {
         const input = ref.previousElementSibling
         if (input && input instanceof HTMLInputElement) {
-          input.select()
-          document.execCommand('copy')
+          copy(input.value)
           state.copied = true
+          input.select()
           setTimeout(() => {
             state.copied = false
             input.blur()

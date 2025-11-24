@@ -19,6 +19,7 @@
 	},
 	"dependencies": {
 		"@simonwep/pickr": "^1.9.1",
-		"@wordpress/interactivity": "^6.35.0"
+		"@wordpress/interactivity": "^6.35.0",
+		"copy-to-clipboard": "^3.3.3"
 	}
 }

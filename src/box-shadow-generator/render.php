@@ -85,7 +85,8 @@ $config = [
                   data-wp-text="state.copyButtonText"
                   data-wp-bind--disabled="state.copied">Copy</button>
         </div>
-        <div class="mt-4 text-zinc-400 text-sm">Developed by: Reagan Mahinay</div>
+        <div class="mt-4 text-zinc-400 text-sm">© 2025 <a href="https://github.com/ReaganM02"
+             target="__blank">Reagan Mahinay</a></div>
       </div>
     </div>
   </div>

@@ -1,0 +1,12 @@
+{
+  "php.stubs": [
+    "wordpress",
+    "woocommerce",
+    "vendor/php-stubs/wordpress-stubs",
+    "vendor",
+    "filesystem"
+  ],
+  "cSpell.words": [
+    "HEXA"
+  ]
+}

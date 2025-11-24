@@ -3,6 +3,7 @@ module.exports = {
   content: [
     './src/**/*.{html,php}',     // Looks for .html and .php inside src/
     './templates/**/*.{html,php}', // Looks for .html and .php inside templates/
+    './components/**/*.{html,php}'
   ],
   theme: {
     extend: {

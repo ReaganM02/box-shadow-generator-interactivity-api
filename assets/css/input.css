@@ -5,3 +5,66 @@
 body {
   @apply grid grid-rows-1 bg-zinc-100;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.hide-content-shadow .box-shadow-content {
+  display: none;
+}
+
+.show-icon {
+  transition: all ease 0.2s;
+}
+
+.hide-content-shadow .show-icon {
+  transform: rotate(-90deg);
+}
+
+.switch::before {
+  content: "";
+  height: 16px;
+  width: 16px;
+  transition: all ease 0.5s;
+  left: 0;
+  @apply block relative bg-zinc-300 rounded-full transition-all;
+}
+
+.inset-enabled .switch::before {
+  left: 18px;
+  @apply bg-blue-500 transition-all;
+}
+
+.inset-enabled .switch {
+  @apply bg-blue-200;
+}
+
+.pcr-button,
+.pickr .pcr-button::after {
+  @apply !border !border-zinc-200;
+}
+
+.pcr-save {
+  display: none;
+}
+
+.box-result {
+  border-width: 1px;
+  border-style: solid;
+}
+
+.show-multiple {
+  display: flex;
+}
+
+.hide-single-box {
+  display: block;
+}

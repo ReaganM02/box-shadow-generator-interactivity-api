@@ -1,6 +1,0 @@
-{
-	"supports": {
-		"interactivity": true
-	},
-	"viewScriptModule": "file:./view.js"
-}

@@ -41,7 +41,7 @@ $config = [
         <ul class="border rounded-md divide-y">
           <template data-wp-each="context.shadows"
                     data-wp-key="context.item.id">
-            <li class="hover:bg-zinc-50 px-4 py-2"
+            <li class="hover:bg-zinc-50"
                 data-wp-class--hide-content-shadow="!context.item.show">
               <?php boxShadowGeneratorComponent( 'item' ); ?>
             </li>

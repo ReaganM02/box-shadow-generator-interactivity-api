@@ -1,10 +1,10 @@
 <div>
-  <div class="flex justify-between items-center">
+  <div class="flex justify-between items-center px-4 py-2 cursor-pointer"
+       data-wp-on--click="actions.toggleShadowContent">
     <div class="font-semibold text-zinc-800 text-base">
       <span>Shadow </span><span data-wp-text="context.item.id"></span>
     </div>
-    <div class="cursor-pointer show-icon"
-         data-wp-on--click="actions.toggleShadowContent">
+    <div class="cursor-pointer show-icon">
       <svg xmlns="http://www.w3.org/2000/svg"
            width="16"
            height="16"
@@ -16,7 +16,7 @@
       </svg>
     </div>
   </div>
-  <div class="box-shadow-content mt-4">
+  <div class="box-shadow-content mt-4 px-4 pb-2">
     <!-- Inset -->
     <div class="flex justify-between mb-4">
       <div class="flex items-center gap-2 mb-2 w-max cursor-pointer"
